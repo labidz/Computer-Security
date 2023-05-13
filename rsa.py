@@ -24,8 +24,8 @@ def setkeys(p,q):
         d += 1
     private_key = d
 
-
-    def encrypt(message):
+    
+def encrypt(message):
     global public_key, n
     e = public_key
     encrypted_text = 1
