@@ -1,5 +1,5 @@
 def encrypt(text,s):
-result = ""
+   result = ""
    for i in range(len(text)):
       char = text[i]
       if (char >= 'A' and char <= 'Z'):
@@ -8,11 +8,11 @@ result = ""
          result += chr((ord(char) + s - 97) % 26 + 97)
       else:
          result += char
-      return result
+   return result
 
 text = "Hello World!"
 s = 4
 
-print "Plain Text : " + text
-print "Shift pattern : " + str(s)
-print "Cipher: " + encrypt(text,s)
+print("Plain Text : " + text)
+print("Shift pattern : " + str(s))
+print("Cipher: " + encrypt(text,s))
